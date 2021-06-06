@@ -277,7 +277,7 @@
     </div>
 
 
-
+<!-- 聯繫我們 -->
     <div class="container-fluid pd-bt-40" id="Contact">
         <div class="section" style="margin-top: -50px;">
             <div class="title col-md-10 col-xs-12 col-ms-12 col-md-offset-1">
@@ -331,7 +331,7 @@
             </div>
         </div>
     </div>
-
+<!-- Footer -->
     <footer style="background-color: #d9bcb2;border-top:1px solid #a68d85; padding-top: 20px;">
         <div class="container-fluid">
             <div class="col-lg-2 col-md-2 col-sm-2">
@@ -367,12 +367,13 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
     <script src="./js/locomotive-scroll.min.js"></script>
+    <!-- skrollr用在主視覺的滾動視差 -->
     <script type="text/javascript" src="./js/skrollr.min.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
     </script>
+    <!-- sweetalert插件用於聯繫我們按鈕的彈窗 -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
 <script>
     $(function () {
     // jquery在DOM載入後執行 function(){...}
@@ -389,7 +390,7 @@
             }
             t = p;//更新上一次的scroll值
         })
-
+        //每次刷新都滑動到頂部
         var storiesText = ''
         $('html,body').animate({
             scrollTop: 0
@@ -448,7 +449,8 @@
     })
 </script>
 <script>
-    //文字橫向輪播
+//分開寫三個是為了用比較原始的方式調不同的速度
+    //文字橫向滾動1
     function ScrollImgLeft(){ 
         var speed=19;
             var MyMar = null;
@@ -471,7 +473,7 @@
     　　　　　}       
     }
     ScrollImgLeft();
-
+    //文字橫向滾動2
     function ScrollImgLeft1(){ 
         var speed=18;
             var MyMar = null;
@@ -494,7 +496,7 @@
     　　　　　}       
     }
     ScrollImgLeft1();
-
+    //文字橫向滾動3
     function ScrollImgLeft2(){ 
         var speed=16;
             var MyMar = null;
@@ -518,7 +520,9 @@
     }
     ScrollImgLeft2();
 </script>
+
 <script>
+//這個script應該是學長加了要調用locomotive的，但我看不太懂QQ
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
