@@ -345,6 +345,14 @@ a {
     display: flex;
 }
 
+/*滑鼠事件*/
+footer a:hover{
+    text-decoration: none;
+    color: #f4e6e8 !important;
+}
+.shareBtn:hover{
+    box-shadow: 0px 0px 10px white;
+}
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px）) { 

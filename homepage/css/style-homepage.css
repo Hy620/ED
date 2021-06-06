@@ -711,15 +711,23 @@ a {
     display: inline;
 }
 
-/*鼠標經過改變顏色*/
+/*滑鼠事件*/
 footer a:hover{
     text-decoration: none;
-    color: #f4e6e8 !important;
+    color: #fff5eb !important;
 }
 #TypeBox a:hover{
     text-decoration: none;
-    color: #f4e6e8 !important;
+    color: #fff5eb !important;
 }
+.shareBtn:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.mouse:hover{
+    font-size: 20px;
+    color: #fff5eb !important;
+}
+
 /*鼠標經過產生圖片*/
 #Anorexia:hover{
     cursor:url('../images/anorexia.png') !important;
