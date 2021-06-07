@@ -12,34 +12,6 @@
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-     <!-- 滑鼠懸浮連結彈出跟隨圖片 -->
-    <script>
-        this.screenshotPreview=function(){ 
-          xOffset = 10;
-          yOffset = 30;
-          $("a.screenshot").hover(function(e){
-            this.t = this.title;
-            var c = (this.t != "") ? "<br/>" + this.t : "";
-            $("body").append("<p id='screenshot'><img src='"+this.rel+"' />"+c+"</p>");         
-            $("#screenshot")
-            .css("top",(e.pageY - xOffset) + "px")
-            .css("left",(e.pageX + yOffset) + "px")
-            .fadeIn("fast");      
-          },
-          function(){
-            // this.title = this.t; 
-            $("#screenshot").remove();
-          }); 
-          $("a.screenshot").mousemove(function(e){
-            $("#screenshot")
-           .css("top",(e.pageY-xOffset)+"px")
-           .css("left",(e.pageX+yOffset)+"px");
-          });   
-        };
-        $(document).ready(function(){
-          screenshotPreview();
-        });
-    </script>
 </head>
 
 <body id="js-scroll">
@@ -551,6 +523,34 @@
     }
     ScrollImgLeft2();
 </script>
+ <!-- 滑鼠懸浮連結彈出跟隨圖片 -->
+    <script>
+        this.screenshotPreview=function(){ 
+          xOffset = 10;
+          yOffset = 30;
+          $("a.screenshot").hover(function(e){
+            this.t = this.title;
+            var c = (this.t != "") ? "<br/>" + this.t : "";
+            $("body").append("<p id='screenshot'><img src='"+this.rel+"' />"+c+"</p>");         
+            $("#screenshot")
+            .css("top",(e.pageY - xOffset) + "px")
+            .css("left",(e.pageX + yOffset) + "px")
+            .fadeIn("fast");      
+          },
+          function(){
+            // this.title = this.t; 
+            $("#screenshot").remove();
+          }); 
+          $("a.screenshot").mousemove(function(e){
+            $("#screenshot")
+           .css("top",(e.pageY-xOffset)+"px")
+           .css("left",(e.pageX+yOffset)+"px");
+          });   
+        };
+        $(document).ready(function(){
+          screenshotPreview();
+        });
+    </script>
 
 <!-- <script>
 //這個script應該是學長加了要調用locomotive的，但我看不太懂QQ
