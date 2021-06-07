@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style-topic.css">
     <title>Topics</title>
-<!--     <script src="./js/jquery-3.3.1.min.js"></script> -->
-    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
-   <!--  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="./js/script.js"></script>
 </head>
 
 <body id="js-scroll">
@@ -221,24 +221,32 @@
                 </div>
                 <div class="exh-contner">
                     <div>
-                        <img src="images/exh1.png" alt="">
+                        <img src="images/exh1.png" onmouseover="this.src='./images/exh1-1.png';" onmouseout="this.src='./images/exh1.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh2.png" alt="">
+                        <img src="images/exh2.png" onmouseover="this.src='./images/exh2-1.png';" onmouseout="this.src='./images/exh2.png';" alt="">
                     </div>
                     <div>
                         <i>
                             2021/5/14 - 2021/6/14 </br>
                             Himalayas Museum, Shanghai</br>
-                            Curator: Qingwen Zhang
+                            Curator: Qingwen Zhang<br>
+                            <br>
                         </i>
-                        <img src="images/icon1.png" alt="">
+                            <span  style="font-family: fangSong;">
+                                策展團隊：<a target="_blank" class="fangSong" href="https://weibo.com/n/%E5%B0%91%E5%A5%B3%E7%A5%9E%E5%A9%86%E5%A9%86"><i class="helvetica">@</i>少女神婆婆</a><br>
+                                主辦單位：<a target="_blank" class="fangSong" href="https://weibo.com/n/%E5%96%9C%E7%8E%9B%E6%8B%89%E9%9B%85%E7%BE%8E%E6%9C%AF%E9%A6%86"><i class="helvetica">@</i>喜馬拉雅美術館</a>
+                            </span>
+                        
+                        <img src="images/bodyex.png" alt="">
                     </div>
                     <div>
-
+                        <div class="getMore wow slideInUp" style="display: flex; align-items: center; width: 100%">
+                            <a target="_blank" href="https://daydaynews.cc/zh-hant/psychological/1145781.html"><button class="LibreCaslonTextRegular">LEARN MORE</button></a>
+                        </div>
                     </div>
                     <div>
-                        <img src="images/exh3.png" alt="">
+                        <img src="images/exh3.png" onmouseover="this.src='./images/exh3-1.png';" onmouseout="this.src='./images/exh3.png';" alt="">
                         <i style="font-family: helvetica;">
                             # &thinsp; NOBODY IS FREE &thinsp; # </br>
                             # &thinsp; No, BODY IS FREE&thinsp; # </br>
@@ -248,17 +256,17 @@
                         </i>
                     </div>
                     <div>
-                        <img src="images/exh4.png" alt="">
+                        <img src="images/exh4.png" onmouseover="this.src='./images/exh4-1.png';" onmouseout="this.src='./images/exh4.png';" alt="">
                         <img src="images/ribbon.png" alt="">
                     </div>
                     <div>
-                        <img src="images/exh5.png" alt="">
+                        <img src="images/exh5.png" onmouseover="this.src='./images/exh5-1.png';" onmouseout="this.src='./images/exh5.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh7.png" alt="">
+                        <img src="images/exh7.png" onmouseover="this.src='./images/exh7-1.png';" onmouseout="this.src='./images/exh7.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh6.png" alt="">
+                        <img src="images/exh6.png" onmouseover="this.src='./images/exh6-1.png';" onmouseout="this.src='./images/exh6.png';" alt="">
                     </div>
                 </div>
             </div>
@@ -309,76 +317,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="fl-mid-right" style="width: 30%; margin-left: 26px;margin-top: 0px;">
-                            <img src="images/fl1.png" alt="">
+                        <div class="fl-mid-right" id="bone" style="width: 30%; margin-left: 26px;margin-top: 0px;">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=705yRfs6Dbs"><img src="images/fl1.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-  <!--   </div>
-    <div class="mid container-fluid">            
-    </div> -->
-<!--     <ul class="sel">
-        <li class="btn1 btnNow"><img src="./images/fl2.png" alt=""></li>
-        <li class="btn2"><img src="./images/fl3.png" alt=""></li>
-        <li class="btn3"><img src="./images/fl4.png" alt=""></li>
-    </ul> -->
 
-<!-- 電影輪播 -->
-    <!-- <div class="picWrapper">
-        <ul class="pics">
-            <li class="pic1"> 
-                <div>
-                    <h3 style="font-weight: 500;font-size: 28px;">Sharing the Secret</h3>
-                    <span>2000</span>
-                    <div>
-                        <img src="images/fl2.png" alt="">
-                        <img src="images/Shape 7.png" alt="">
-                    </div>
-                    <p style="font-weight: 300;font-size: 15px;">A teenage girl's struggle life suffering from bulimia who secretly binges and
-                        purges,
-                        because she feels that she must always seem happy for her parents and friends.
-                    </p>
-                </div>
-            </li>
-            <li class="pic2">
-                <div>
-                    <h3 style="font-weight: 500;font-size: 28px;">Starving in Suburbia</h3>
-                    <span>2000</span>
-                    <div>
-                        <img src="images/fl3.png" alt="">
-                        <img src="images/Shape 7.png" alt="">
-                    </div>
-                    <p style="font-weight: 300;font-size: 15px;">A 17-year-old dancer joins a "th-
-                        inspiration" website and devotes herself to the almost religious glorification
-                        of
-                        "thin", until she becomes possessed by the dark world of anorexia.
-                    </p>
-                </div>
-            </li>
-            <li class="pic3">
-                <div>
-                    <h3>Portrait of a Bulimic</h3>
-                    <span>2000</span>
-                    <div>
-                        <img src="images/fl4.png" alt="">
-                        <img src="images/Shape 7.png" alt="">
-                    </div>
-                    <p>The Secret Life of Mary-Margaret: Portrait of a Bulimic tells the true story of
-                        an
-                        attractive teenager who feels desperately inadequate. She responds to the
-                        pressure
-                        to stay thin.</p>
-                </div>
-            </li>
-            <li class="pic4"><img src="./images/fl4.png" alt="">
-            </li>
-            <li class="pic5"><img src="./images/fl4.png" alt="">
-            </li>
-        </ul>
-    </div> -->
-<div class="container-fluid pd-bt-40" style="margin-top: -200px;">
+<div class="container-fluid" style="margin-top: -300px;">
     <div class="col-md-12 col-xs-12 col-sm-12 mainStories">
        
     </div>
@@ -474,10 +421,6 @@
     <script src="./js/wow.min.js"> </script>
     <script src="./js/locomotive-scroll.min.js"></script>
     <script type="text/javascript" src="./js/skrollr.min.js"></script>
-
-    <script type="text/javascript">
-        var s = skrollr.init();
-    </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- 換圖震動 -->
     <script>
@@ -617,29 +560,6 @@
         });
     </script>
 </body>
-<!-- 轮播 -->
-<script>
-    var btnl = document.querySelector(".btn-l");
-    var btnr = document.querySelector(".btn-r");
-    var caCON = document.querySelector(".carousel-contrian"); // 大盒子
-    var num = 0;
-    btnl.onclick = function() {
-        num++;
-        caCON.style.transform = "translateX(-33.3%)";
-
-    }
-    btnr.onclick = function() {
-        caCON.style.transform = "translateX(0)";
-    }
-    var timer = setInterval(function() {
-        //手动调用点击事件
-        btnl.onclick()
-    }, 2000);
-    var timel = setInterval(function() {
-        //手动调用点击事件
-        btnr.onclick()
-    }, 4000);
-</script>
   <!-- hover換圖震動 -->
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css">

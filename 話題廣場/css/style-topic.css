@@ -333,10 +333,20 @@ a {
 }
 
 /*滑鼠事件*/
+#bone img:hover{
+    mix-blend-mode: multiply;
+    cursor: pointer !important;
+}
 footer a:hover{
     text-decoration: none;
     color: #fff5eb !important;
     cursor: pointer;
+}
+.getMore button:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+    cursor: pointer;
+    border: 1px solid #fff5eb;
 }
 .shareBtn:hover{
     box-shadow: 0px 0px 10px white;
@@ -548,8 +558,10 @@ li {
     position: absolute;
     right: 20px;
     bottom: 0;
-    width: 45px;
-    height: 45px;
+    width: 40%;
+    height: 60%;
+    opacity: 65%;
+    mix-blend-mode: multiply;
 }
 .exh-contner div:nth-of-type(5)>i {
     position: absolute;
@@ -746,7 +758,19 @@ li {
     margin-top: 10px;
     font-size: 10px;
 }
-
+.getMore {
+    text-align: center;
+    background-color: #ccaea3;
+}
+.getMore button {
+    color: #aa6455;
+    border-radius: 20px;
+    border: 1px solid #aa6455;
+    text-align: center;
+    padding: 10px 30px;
+    background: none;
+    margin-bottom: 30px;
+}
 /* 响应 */
 @media screen and (max-width: 800px) {
     * {

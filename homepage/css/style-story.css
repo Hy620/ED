@@ -385,7 +385,12 @@ footer a:hover{
 #Stories img:hover{
     mix-blend-mode: luminosity;
 }
-
+.getMore button:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+    cursor: pointer;
+    border: 1px solid #fff5eb;
+}
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px）) { 
     #Contact .title .call {
