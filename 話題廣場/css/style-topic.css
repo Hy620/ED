@@ -197,7 +197,14 @@ a {
 }
 .store-item {
     margin: 0 10px;
-    padding: 20px 0;
+    padding: 16px 0 13px 0;
+    border-bottom: 1px solid #a0847a;
+}
+.store-item-line {
+    border-bottom: 1px solid #a0847a;
+}
+.store-item-line-white {
+    border-bottom: 1px solid #fff5eb;
 }
 .store-item .author {
     height: 45px;
@@ -350,13 +357,28 @@ a {
 footer a:hover{
     text-decoration: none;
     color: #fff5eb !important;
+    cursor: pointer;
 }
 .shareBtn:hover{
     box-shadow: 0px 0px 10px white;
+    cursor: pointer;
 }
 .mouse:hover{
     font-size: 20px;
     color: #fff5eb !important;
+    cursor: pointer;
+}
+#Stories a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+    cursor: pointer !important;
+}
+.pic-darken {
+    mix-blend-mode: darken;
+    cursor: pointer !important;
+}
+.hide{
+    display:none;
 }
 
 /* 小屏幕（平板，大于等于 768px） */

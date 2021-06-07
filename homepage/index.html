@@ -549,6 +549,11 @@
         $(document).ready(function(){
           screenshotPreview();
         });
+
+        //鼠标移入、移出链接时，都去掉下划线
+       $("a").hover( function(event){
+            $(this).css("textDecoration", "none");  
+        } );
     </script>
 
 <!-- <script>
